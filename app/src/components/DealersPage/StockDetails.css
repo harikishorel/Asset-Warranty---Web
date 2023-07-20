@@ -1,0 +1,88 @@
+.table-conta {
+  /* 
+  width: 280px;
+  border-radius: 10px;*/
+  /* margin-left: 550px;
+  margin-top: -315px; */
+  width: 100%;
+  border-radius: 10px;
+  margin-left: 70px;
+}
+
+.tableStock {
+  /* width: 260%; */
+  width: 90%;
+  border-collapse: collapse;
+  border-radius: 10px;
+}
+
+.tableStock th {
+  background-color: #000000;
+  font-weight: bold;
+  color: white;
+  padding: 8px;
+}
+
+.tableStock thead {
+  background-color: black;
+}
+
+.tableStock td {
+  padding: 8px;
+  text-align: left;
+  color: #000000;
+  border-bottom: 1px solid #020202;
+}
+
+.tableStock tr:last-child td {
+  border-bottom: none;
+}
+
+.sd1 {
+  display: flex;
+  /* flex-direction: row; */
+  max-width: 100%;
+  margin: auto;
+}
+
+.sd3 {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 80px;
+  width: 40%;
+  height: 300px;
+  margin-left: 100px;
+  margin-top: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+
+.sd2 {
+  display: flex;
+  /* width: 600px; */
+  width: 45%;
+  text-align: center;
+  height: 280px;
+  color: white;
+  margin-left: 60px;
+  font-family: "Josefin Sans";
+  background-color: rgb(255, 255, 255);
+  padding-top: 60px;
+  padding-left: 45px;
+  font-size: 22px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  background-image: url(./stockbc.png);
+}
+
+@media (max-width: 767px) {
+  .sd2 {
+    display: none;
+  }
+
+  .table-conta {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 190px;
+  }
+}

@@ -1,0 +1,154 @@
+.tab-co {
+  /* width: 270px;
+  border-radius: 10px;
+  margin-left: 230px; */
+  width: 50%;
+  border-radius: 10px;
+  margin-left: 230px;
+}
+
+.tabl {
+  /* width: 250%; */
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 10px;
+}
+.tabl thead {
+  background-color: #000000;
+}
+tbody tr:hover {
+  background-color: #e7e7e7;
+}
+
+.tabl th {
+  padding: 8px;
+  text-align: left;
+  color: #ffffff;
+}
+.tabl td {
+  padding: 8px;
+  text-align: left;
+  color: #000000;
+  border-bottom: 1px solid #020202;
+}
+
+.tabl th {
+  background-color: #000000;
+  font-weight: bold;
+}
+
+.tabl tr:last-child td {
+  border-bottom: none;
+}
+
+.d0d2 {
+  align-items: center;
+  width: 20%;
+  padding-left: 60px;
+}
+
+/* .popbtn {
+    margin:'0px 0px 400px 250px';
+  } */
+
+.asd {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+/* .btn2{
+  width: fit-content;
+  height: 45px;
+  background: #ffffff0d;
+  border-radius: 8px;
+  border: 2px solid rgb(117, 117, 117);
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+  position: relative;
+  overflow: hidden;
+  padding: 10px 25px;
+  z-index: 1;
+  } */
+
+.add-Stock {
+  font-size: 17px;
+  padding: 0.5em 1em;
+  align-items: center;
+  border: transparent;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  background: rgba(93, 68, 167, 1);
+  color: white;
+  border-radius: 4px;
+  margin-left: -237px;
+  /* width: 130px; */
+  margin-top: 140px;
+
+  height: 45px;
+}
+
+.add-Stock:hover {
+  color: white;
+  background: rgb(174, 0, 255);
+}
+
+.add-Stock:active {
+  transform: translate(0em, 0.2em);
+}
+
+.sto1 {
+  display: flex;
+  flex-direction: row;
+}
+
+.sto2 {
+  display: flex;
+  display: flex;
+  width: 400px;
+  text-align: center;
+  height: 300px;
+
+  margin-left: 60px;
+  font-family: "Josefin Sans";
+
+  background-color: rgb(255, 255, 255);
+  padding-top: 40px;
+  padding-left: 95px;
+  font-size: 22px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  background-image: url(./stockbc.png);
+}
+
+.sto3 {
+  display: flex;
+  flex-direction: row;
+
+  margin-bottom: 80px;
+  width: 29%;
+  height: 300px;
+  margin-left: 60px;
+  /* margin-top: 20px; */
+
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+
+@media (max-width: 767px) {
+  .sto2 {
+    display: none;
+  }
+  .add-Stock {
+    margin-left: 200px;
+    margin-top: -30px;
+    /* width: 500px; */
+  }
+  .tab-co {
+    margin-top: 50px;
+    margin-left: -240px;
+    width: 150px;
+  }
+}

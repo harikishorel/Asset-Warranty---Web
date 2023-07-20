@@ -1,0 +1,109 @@
+.token-container {
+  height: 500px;
+}
+
+.tok-cont {
+  background-color: transparent;
+  color: #080808;
+  margin: 0 auto;
+  max-width: 90%;
+  max-height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+/* .tok-img {
+  background-image: url(./tokenimg.png);
+} */
+.tok-img {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.tok-img.top-right {
+  top: 0;
+  right: 0;
+  background-image: url(./tokenimg.png);
+}
+
+.tok-img.bottom-left {
+  bottom: 0;
+  left: 0;
+  background-image: url(./tokenimg.png);
+}
+.send-button {
+  border: none;
+  width: 200px;
+  display: flex;
+  margin: auto;
+  padding: 0.75rem 1.5rem;
+  background-color: #488aec;
+  color: #ffffff;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: middle;
+  align-items: center;
+  border-radius: 0.5rem;
+  user-select: none;
+  gap: 0.75rem;
+  box-shadow: 0 4px 6px -1px #488aec31, 0 2px 4px -1px #488aec17;
+  transition: all 0.6s ease;
+}
+
+.send-button:hover {
+  box-shadow: 0 10px 15px -3px #488aec4f, 0 4px 6px -2px #488aec17;
+}
+
+.send-button:focus,
+button:active {
+  opacity: 0.85;
+  box-shadow: none;
+}
+
+.send-button img {
+  /* width: 1.25rem;
+  height: 1.25rem; */
+  height: 40px;
+  width: 50px;
+}
+
+.send-t {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 80%;
+  border-color: #080808;
+  border-radius: 10px;
+  margin-top: 70px;
+}
+
+.drop-token .dropdown-toggle {
+  width: 100%;
+  border-radius: 0.375rem;
+  border: 1px solid rgba(55, 65, 81, 1);
+  outline: 0;
+  background-color: rgba(17, 24, 39, 1);
+  padding: 0.75rem 1rem;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: rgba(243, 244, 246, 1);
+  margin: 0.5rem 0;
+}
+
+.drop-token .dropdown-menu {
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.drop-tok {
+  background-color: transparent;
+}

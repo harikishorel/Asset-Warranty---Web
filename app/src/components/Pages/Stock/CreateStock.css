@@ -1,0 +1,37 @@
+.serial {
+  font-family: "Montserrat", sans-serif;
+  color: #4d4c4c;
+  font-size: small;
+  width: 257px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 80%;
+  margin-left: 40px;
+}
+
+.d0d1 {
+  align-items: center;
+  width: 100%;
+}
+.AddStock {
+  background-color: #ffffff;
+  color: #080808;
+  /* opacity: 60%; */
+  margin: 0 auto;
+  max-width: 100%;
+  text-align: center;
+  /* box-shadow: 0 24px 64px #26214a1a; */
+  border-radius: 12px;
+  /* padding: 30px 60px;
+  position: relative; */
+}
+
+.hintMessage {
+  color: #999;
+  font-size: 14px;
+  text-align: left;
+}

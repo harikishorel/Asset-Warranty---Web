@@ -1,0 +1,75 @@
+
+
+.scan{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+.scan .qrcode {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  background: url(./QR_Code01.png);
+  background-size: 120px;
+}
+
+.scan ::before
+{
+  content: '';
+  position: absolute;
+  top : 0 ;
+  left: 0;
+  width: 100%;
+  background: url(./Untitled.png    );
+  background-size: 120px;
+  overflow: hidden;
+  animation: animate 4s ease-in-out infinite;
+
+    }
+
+@keyframes animate 
+{
+  0%,100%{
+    height: 0;
+
+  }
+  50%{
+    height: 100%;
+
+  }
+}
+
+.scan  ::after{
+    content: '';
+    position: absolute;
+    inset: 20px ;
+    width: calc(100% - 40px);
+    height: 2px;
+    background: #ff0000;
+    filter: drop-shadow(0 0 20px #ff0000)drop-shadow(0 0 60px #ff0000);
+    animation: animateLine 4s ease-in-out infinite;
+}
+
+@keyframes animateLine {
+    0%,100%{
+        top:8px;
+    }
+    50%{
+        top:calc(100% - 10px);
+    }
+}
+
+.qrouter{
+    position :absolute;
+    inset : 0;
+    background: url(./bbb-removebg-preview.png) ;
+    background-size: 120px;
+    background-repeat: no-repeat;
+    animation: animateText 0.5s linear infinite;
+
+
+
+}
+

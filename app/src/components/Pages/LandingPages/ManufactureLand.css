@@ -1,0 +1,242 @@
+.manufacturing-header {
+  display: flex;
+  margin-left: 10px;
+}
+
+.coxtn {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding-top: 140px;
+  padding-left: 80px;
+  word-spacing: 3px;
+}
+
+.img11 {
+  width: 490px;
+  height: 300px;
+  padding-bottom: 10px;
+  margin-right: 70px;
+  margin-top: 100px;
+  border-radius: 30px;
+  box-shadow: 0 24px 64px #26214a1a;
+}
+
+.flow {
+  width: 490px;
+  height: 300px;
+  padding-bottom: 10px;
+  margin-right: 70px;
+  margin-top: 100px;
+  border-radius: 30px;
+  box-shadow: 0 24px 64px #26214a1a;
+}
+
+.topc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 850px) {
+  .topc {
+    flex-direction: column;
+  }
+
+  .flow {
+    margin-right: 0;
+    margin-top: 50px;
+  }
+
+  .content {
+    padding: 20px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .topc {
+    justify-content: space-evenly;
+  }
+}
+
+.logo img {
+  max-width: 25%;
+  max-height: 25%;
+  /* border-radius: 15px; */
+  padding-bottom: 20px;
+}
+.twop {
+  padding-bottom: 100px;
+  padding-top: 110px;
+  background-image: "./MicrosoftTeams-image(1).png";
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.twop > div {
+  width: 300px;
+  height: auto;
+  padding: 20px;
+  margin: 20px;
+  /* margin-top: 20px; */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(163, 33, 33, 0.483);
+  background-color: white;
+}
+
+.twop h2 {
+  margin-top: 0;
+}
+
+.twop h2:first-child {
+  margin-bottom: 10px;
+}
+
+.twop h2[color="red"] {
+  color: red;
+}
+
+.twop > div {
+  transition: transform 0.3s ease-in-out;
+}
+
+.twop > div.animate {
+  transform: translateY(-10px);
+}
+
+.row1:hover {
+  transform: translateY(-10px);
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 0 10px 10px rgba(163, 33, 33, 0.151);
+}
+
+.row2:hover {
+  transform: translateY(-10px);
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 0 10px 10px rgba(163, 33, 33, 0.151);
+}
+
+.row3:hover {
+  transform: translateY(-10px);
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 0 10px 10px rgba(163, 33, 33, 0.151);
+}
+
+.part3 {
+  height: 600px;
+  background-color: #071621;
+  color: aliceblue;
+  display: flex;
+  flex-wrap: wrap; /* Add this property to allow flex items to wrap */
+
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px; /* Add some padding to the sides */
+}
+
+.pc {
+  flex: 1; /* Add this property to make the text content fill the available space */
+
+  text-align: left;
+  padding-top: 80px;
+  padding-left: 100px;
+  padding-right: 100px;
+  word-spacing: 3px;
+}
+
+.floating {
+  flex: 1; /* Add this property to make the image fill the available space */
+  text-align: center; /* Change to center align */
+  text-align: right;
+  padding-left: 50px;
+  padding-bottom: 70px;
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+.flow {
+  max-width: 100%; /* Add this property to make the image responsive */
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 15px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+
+.tracking {
+  padding-left: 40px;
+}
+
+.up {
+  margin-left: 400px;
+  /* z-index: 999; */
+  font-size: 20px;
+  background-color: white;
+  color: black;
+  width: 45px;
+  height: 45px;
+  opacity: 0.75;
+  border: 1px solid #e7eae8;
+  border-radius: 8px;
+  cursor: pointer;
+  animation: bounce_513 3s infinite;
+}
+
+@keyframes bounce_513 {
+  0%,
+  100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .part3 {
+    flex-direction: column;
+    height: auto;
+    padding-bottom: 50px;
+  }
+
+  .pc {
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .floating {
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+
+  .up {
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .pc {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .floating {
+    padding-bottom: 50px;
+  }
+}

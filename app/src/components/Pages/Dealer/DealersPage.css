@@ -1,0 +1,142 @@
+.table-containerss {
+  width: 100%;
+
+  border-radius: 10px;
+  margin-left: 200px;
+}
+/* @import url('https://fonts.googleapis.com/css2?family=Bona+Nova&display=swap'); */
+
+@import url("https://fonts.googleapis.com/css2?family=Bona+Nova&family=Josefin+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Passion+One&display=swap");
+
+.tabless {
+  width: 90%;
+  /* margin: auto; */
+  border-collapse: collapse;
+  border-radius: 10px;
+}
+.tabless thead {
+  background-color: #000000;
+}
+tbody tr:hover {
+  background-color: #e7e7e7;
+}
+
+.tabless th {
+  padding: 8px;
+  text-align: left;
+  color: #ffffff;
+}
+.tabless td {
+  padding: 8px;
+  text-align: left;
+  color: #000000;
+  border-bottom: 1px solid #020202;
+}
+
+.tabless th {
+  background-color: #000000;
+  font-weight: bold;
+}
+
+.tabless tr:last-child td {
+  border-bottom: none;
+}
+
+.bottom {
+  margin-bottom: auto;
+}
+
+.bttn {
+  display: flex;
+  margin: auto;
+}
+
+.add-dealer {
+  font-size: 17px;
+  padding: 0.5em 1em;
+  align-items: center;
+  border: transparent;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  background: rgba(93, 68, 167, 1);
+  color: white;
+  border-radius: 4px;
+  margin-left: -257px;
+  width: 120px;
+  margin-top: 140px;
+  height: 45px;
+}
+
+.add-dealer:hover {
+  color: white;
+  background: rgb(174, 0, 255);
+}
+
+.add-dealer:active {
+  transform: translate(0em, 0.2em);
+}
+
+.de2 {
+  display: flex;
+  display: flex;
+  width: 400px;
+  text-align: center;
+  height: 300px;
+
+  margin-left: 60px;
+  font-family: "Josefin Sans";
+
+  background-color: rgb(255, 255, 255);
+  padding-top: 40px;
+  padding-right: 30px;
+  font-size: 22px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  background-image: url(./dealbc.png);
+}
+
+.de1 {
+  display: flex;
+  flex-direction: row;
+}
+
+.de3 {
+  display: flex;
+  flex-direction: row;
+
+  margin-bottom: 80px;
+  width: 29%;
+  height: 300px;
+  margin-left: 100px;
+  /* margin-top: 20px; */
+
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+
+.q1 {
+  font-family: georgia, serif;
+  font-size: 40px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+li {
+  display: inline-block;
+}
+
+@media (max-width: 767px) {
+  .de2 {
+    display: none;
+  }
+  .add-dealer {
+    margin-left: 180px;
+    margin-top: -30px;
+    /* width: 500px; */
+  }
+  .table-containerss {
+    margin-top: 50px;
+    margin-left: -280px;
+    width: 150px;
+  }
+}

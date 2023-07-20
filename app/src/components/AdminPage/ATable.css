@@ -1,0 +1,109 @@
+.custom-table {
+  width: 800px;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.custom-table th,
+.custom-table td {
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+.custom-table th {
+  text-align: left;
+}
+
+.custom-table thead th {
+  background-color: #a3a3a7;
+  color: black;
+}
+
+.custom-table tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.custom-table td:hover:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -9999px;
+  bottom: -9999px;
+  /* background-color: rgba(255, 255, 255, 0.5); */
+  z-index: -1;
+}
+
+.table-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+/* .table-button {
+  appearance: none;
+  background-color: transparent;
+  border: 0.125em solid #ffffff;
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 3.75em;
+  min-width: 0;
+  outline: none;
+  padding: 1em 2.3em;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  will-change: transform;
+} */
+.table-button {
+  font-size: 17px;
+  font-weight: 500;
+  padding: 0.5em 1em;
+  background-color: transparent;
+  border: 0.125em solid #ffffff;
+  border-radius: 5px;
+  height: 50px;
+  color: white;
+}
+
+.table-button:disabled {
+  pointer-events: none;
+}
+
+.table-button:hover {
+  color: rgba(0, 0, 0, 0.5);
+  background-color: #ffffff;
+  /* box-shadow: rgba(255, 255, 255, 0.25) 0 8px 15px; */
+  transform: translateY(-2px);
+}
+
+.table-button:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+.table-input {
+  cursor: text;
+  font-size: 17px;
+  font-weight: 500;
+  padding: 0.5em 1em;
+  background-color: transparent;
+  border: 0.125em solid #ffffff;
+  border-radius: 5px;
+  height: 50px;
+  color: white;
+}
